@@ -7,8 +7,12 @@
 <th:block th:replace="base::FinalNav"></th:block>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col col-sm-10">
-            <div align="center">
+        <div class="col col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p class="panel-title text-center">Course Evaluation</p>
+                </div>
+                <div class="panel-body">
                 <form action="#" th:action="@{/evaluation2}" th:object="${evaluation}" method="post">
 
                     <input type="hidden" name="courseId" th:value="${course.id}" />
@@ -24,7 +28,7 @@
                         <br />
 
                         <div class="subtitle">Section II: Rate the Course </div>
-                        1. How would you rate the course content? <br />
+                        1. How would you rate the course content?
                         <div class="radio">
                             <label class="radio-inline"><input type="radio" name="courseContentRating" value="Excellent" checked/>Excellent</label>
                             <label class="radio-inline"><input type="radio" name="courseContentRating" value="Above Average" />Above Average</label>
@@ -33,7 +37,7 @@
                             <label class="radio-inline"><input type="radio" name="courseContentRating" value="Poor" />Poor</label>
                         </div>
                         <br />
-                        2. How would you rate the quality of instruction?<br />
+                        2. How would you rate the quality of instruction?
                         <div class="radio">
                             <label class="radio-inline"><input type="radio" name="instructionQualityRating" value="Excellent" checked />Excellent</label>
                             <label class="radio-inline"><input type="radio" name="instructionQualityRating" value="Above Average" />Above Average</label>
@@ -42,7 +46,7 @@
                             <label class="radio-inline"><input type="radio" name="instructionQualityRating" value="Poor" />Poor</label>
                         </div>
                         <br />
-                        3. How would you rate your overall training experience?<br />
+                        3. How would you rate your overall training experience?
                         <div class="radio">
                             <label class="radio-inline"><input type="radio" name="trainingExperienceRating" value="Excellent" checked />Excellent</label>
                             <label class="radio-inline"><input type="radio" name="trainingExperienceRating" value="Above Average" />Above Average</label>
@@ -51,7 +55,7 @@
                             <label class="radio-inline"><input type="radio" name="trainingExperienceRating" value="Poor" />Poor</label>
                         </div>
                         <br />
-                        4. How would you rate the textbook or handouts? <br />
+                        4. How would you rate the textbook or handouts?
                         <div class="radio">
                             <label class="radio-inline"><input type="radio" name="textBookRating" value="Excellent" checked />Excellent</label>
                             <label class="radio-inline"><input type="radio" name="textBookRating" value="Above Average" />Above Average</label>
@@ -60,7 +64,7 @@
                             <label class="radio-inline"><input type="radio" name="textBookRating" value="Poor" />Poor</label>
                         </div>
                         <br />
-                        5. How would you rate the classroom environment and seating? <br />
+                        5. How would you rate the classroom environment and seating?
                         <div class="radio">
                             <label class="radio-inline"><input type="radio" name="classroomEnvironment" value="Excellent" checked />Excellent</label>
                             <label class="radio-inline"><input type="radio" name="classroomEnvironment" value="Above Average" />Above Average</label>
@@ -69,7 +73,7 @@
                             <label class="radio-inline"><input type="radio" name="classroomEnvironment" value="Poor" />Poor</label>
                         </div>
                         <br />
-                        6. How would you rate the classroom computer equipment? <br />
+                        6. How would you rate the classroom computer equipment?
                         <div class="radio">
                             <label><input class="radio-inline" type="radio" name="equipmentRating" value="Excellent" checked />Excellent</label>
                             <label><input class="radio-inline" type="radio" name="equipmentRating" value="Above Average" />Above Average</label>
@@ -96,7 +100,7 @@
                             <label class="radio-inline"><input type="radio" name="howDidYouFindOut" id="howDidYouFindOut" value="Brochure - ITI schedule of classes">Brochure - ITI schedule of classes </label><br>
                             <label class="radio-inline"><input type="radio" name="howDidYouFindOut" id="howDidYouFindOut" value="Word of Mouth">Word of Mouth </label>
                             <label class="radio-inline"><input type="radio" name="howDidYouFindOut" id="howDidYouFindOut" value="Other">Other </label>
-                            <input type="text"  name="howDidYouFindOut2" id="howDidYouFindOut" size=50 maxlength="90"><br>
+                            <input type="text" name="howDidYouFindOut2" id="howDidYouFindOut" size=50 maxlength="90" width="18"><br>
 
                         <p>2. If you have further questions, please feel free to contact us at 240-567-5510</p>
                         <br />
@@ -108,6 +112,8 @@
                         </div>
                     </td></tr></table>
                 </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
